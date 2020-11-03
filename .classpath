@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="test/java/" kind="src" path="src"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="lib" path="build/libs/CodeFall2020B - given3.jar"/>
+	<classpathentry kind="lib" path="build/tmp/expandedArchives/org.jacoco.agent-0.8.5.jar_6a2df60c47de373ea127d14406367999/jacocoagent.jar"/>
+	<classpathentry kind="lib" path="cls" sourcepath="/Users/brentstockton/Desktop/Documents/btstockt-SER316/CodeFall2020B - given3/cls"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="/Users/brentstockton/Desktop/Documents/btstockt-SER316/CodeFall2020B - given3/cls/main/java"/>
+	<classpathentry kind="output" path="build/classes/java/main"/>
+</classpath>
