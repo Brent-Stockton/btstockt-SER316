@@ -1,7 +1,7 @@
 package main.java;
 
 public class Clothing implements Comparable<Clothing> {
-    public double price;   ///make private ****
+    public double price;   
     public String Description;
 
     public Clothing() {
@@ -13,7 +13,12 @@ public class Clothing implements Comparable<Clothing> {
         this.price = price;
         this.Description = descr;
     }
-
+    /**Method:  CompareTo(Clothing clothes)
+     * Inputs:  Clothing clothes
+     * Returns:  int (1,-1,0)
+     * Description: Method compares clothing prices and 
+     * returns a integer.
+     * */
     public int compareTo(Clothing clothes) {
         if (clothes.price > this.price) {
             return 1;
