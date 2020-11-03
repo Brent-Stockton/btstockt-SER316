@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GivenBlackBox" tests="80" skipped="0" failures="28" errors="0" timestamp="2020-10-28T05:10:10" hostname="Brents-MacBook-Air.local" time="0.158">
+<testsuite name="GivenBlackBox" tests="80" skipped="0" failures="28" errors="0" timestamp="2020-11-03T03:25:54" hostname="Brents-MacBook-Air.local" time="0.383">
   <properties/>
-  <testcase name="oneBaseBear3clothingsLargeNumberExpectSaving[0]" classname="GivenBlackBox" time="0.018">
+  <testcase name="oneBaseBear3clothingsLargeNumberExpectSaving[0]" classname="GivenBlackBox" time="0.138">
     <failure message="java.lang.AssertionError: expected:&lt;1.8E307&gt; but was:&lt;1.7999999999999995E307&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;1.8E307&gt; but was:&lt;1.7999999999999995E307&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -67,9 +67,9 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBaseBearWithnoClothing[0]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="oneDownFoamWithnoClothing[0]" classname="GivenBlackBox" time="0.001"/>
-  <testcase name="oneBaseBear3clothingsoneFreeExpectSaving[0]" classname="GivenBlackBox" time="0.011">
+  <testcase name="oneBaseBearWithnoClothing[0]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="oneDownFoamWithnoClothing[0]" classname="GivenBlackBox" time="0.0"/>
+  <testcase name="oneBaseBear3clothingsoneFreeExpectSaving[0]" classname="GivenBlackBox" time="0.031">
     <failure message="java.lang.AssertionError: expected:&lt;0.0&gt; but was:&lt;6.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;0.0&gt; but was:&lt;6.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -135,11 +135,11 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBear3clothingsExpectSaving[0]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="oneBearTest3clothingsExpectSaving[0]" classname="GivenBlackBox" time="0.002"/>
+  <testcase name="oneBear3clothingsExpectSaving[0]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="oneBearTest3clothingsExpectSaving[0]" classname="GivenBlackBox" time="0.001"/>
   <testcase name="oneBearTest10clothingsDiffPriceExpectSaving[0]" classname="GivenBlackBox" time="0.0"/>
   <testcase name="oneBaseBearWithOneClothing[0]" classname="GivenBlackBox" time="0.001"/>
-  <testcase name="threeBearsSaveOnCheapest[0]" classname="GivenBlackBox" time="0.0">
+  <testcase name="threeBearsSaveOnCheapest[0]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;30.0&gt; but was:&lt;40.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;30.0&gt; but was:&lt;40.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -205,7 +205,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBaseBear3clothingsDiffPricesExpectSaving[0]" classname="GivenBlackBox" time="0.0">
+  <testcase name="oneBaseBear3clothingsDiffPricesExpectSaving[0]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;4.0&gt; but was:&lt;6.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;4.0&gt; but was:&lt;6.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -271,7 +271,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBaseBear3clothingsNegativeExpectSaving[0]" classname="GivenBlackBox" time="0.0">
+  <testcase name="oneBaseBear3clothingsNegativeExpectSaving[0]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;-1.0&gt; but was:&lt;6.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;-1.0&gt; but was:&lt;6.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -337,12 +337,12 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBearTest10clothingsExpectSaving[0]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="oneDownBearWithnoClothing[0]" classname="GivenBlackBox" time="0.0"/>
+  <testcase name="oneBearTest10clothingsExpectSaving[0]" classname="GivenBlackBox" time="0.002"/>
+  <testcase name="oneDownBearWithnoClothing[0]" classname="GivenBlackBox" time="0.002"/>
+  <testcase name="threeDiffBaseBearThreeClothingEach[0]" classname="GivenBlackBox" time="0.001"/>
   <testcase name="oneBearNoSavings[0]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="twoBaseBearWithNoClothing[0]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="threeBaseBearWithNoClothing[0]" classname="GivenBlackBox" time="0.002"/>
-  <testcase name="oneBaseBear3clothingsLargeNumberExpectSaving[1]" classname="GivenBlackBox" time="0.001">
+  <testcase name="twoBaseBearWithNoClothing[0]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="oneBaseBear3clothingsLargeNumberExpectSaving[1]" classname="GivenBlackBox" time="0.002">
     <failure message="java.lang.AssertionError: expected:&lt;1.8E307&gt; but was:&lt;3.5999999999999995E307&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;1.8E307&gt; but was:&lt;3.5999999999999995E307&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -410,7 +410,7 @@
   </testcase>
   <testcase name="oneBaseBearWithnoClothing[1]" classname="GivenBlackBox" time="0.001"/>
   <testcase name="oneDownFoamWithnoClothing[1]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="oneBaseBear3clothingsoneFreeExpectSaving[1]" classname="GivenBlackBox" time="0.001">
+  <testcase name="oneBaseBear3clothingsoneFreeExpectSaving[1]" classname="GivenBlackBox" time="0.0">
     <failure message="java.lang.AssertionError: expected:&lt;0.0&gt; but was:&lt;6.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;0.0&gt; but was:&lt;6.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -476,13 +476,13 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBear3clothingsExpectSaving[1]" classname="GivenBlackBox" time="0.0">
+  <testcase name="oneBear3clothingsExpectSaving[1]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;4.0&gt; but was:&lt;8.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;4.0&gt; but was:&lt;8.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:553)
 	at org.junit.Assert.assertEquals(Assert.java:683)
-	at GivenBlackBox.oneBear3clothingsExpectSaving(GivenBlackBox.java:438)
+	at GivenBlackBox.oneBear3clothingsExpectSaving(GivenBlackBox.java:446)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -542,13 +542,13 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBearTest3clothingsExpectSaving[1]" classname="GivenBlackBox" time="0.002">
+  <testcase name="oneBearTest3clothingsExpectSaving[1]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;4.0&gt; but was:&lt;8.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;4.0&gt; but was:&lt;8.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:553)
 	at org.junit.Assert.assertEquals(Assert.java:683)
-	at GivenBlackBox.oneBearTest3clothingsExpectSaving(GivenBlackBox.java:417)
+	at GivenBlackBox.oneBearTest3clothingsExpectSaving(GivenBlackBox.java:425)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -608,7 +608,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBearTest10clothingsDiffPriceExpectSaving[1]" classname="GivenBlackBox" time="0.001">
+  <testcase name="oneBearTest10clothingsDiffPriceExpectSaving[1]" classname="GivenBlackBox" time="0.0">
     <failure message="java.lang.AssertionError: expected:&lt;15.0&gt; but was:&lt;17.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;15.0&gt; but was:&lt;17.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -674,8 +674,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBaseBearWithOneClothing[1]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="threeBearsSaveOnCheapest[1]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="oneBaseBearWithOneClothing[1]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="threeBearsSaveOnCheapest[1]" classname="GivenBlackBox" time="0.0"/>
   <testcase name="oneBaseBear3clothingsDiffPricesExpectSaving[1]" classname="GivenBlackBox" time="0.0">
     <failure message="java.lang.AssertionError: expected:&lt;4.0&gt; but was:&lt;10.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;4.0&gt; but was:&lt;10.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
@@ -808,7 +808,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBearTest10clothingsExpectSaving[1]" classname="GivenBlackBox" time="0.001">
+  <testcase name="oneBearTest10clothingsExpectSaving[1]" classname="GivenBlackBox" time="0.0">
     <failure message="java.lang.AssertionError: expected:&lt;12.0&gt; but was:&lt;16.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;12.0&gt; but was:&lt;16.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -875,9 +875,9 @@
 </failure>
   </testcase>
   <testcase name="oneDownBearWithnoClothing[1]" classname="GivenBlackBox" time="0.0"/>
+  <testcase name="threeDiffBaseBearThreeClothingEach[1]" classname="GivenBlackBox" time="0.0"/>
   <testcase name="oneBearNoSavings[1]" classname="GivenBlackBox" time="0.0"/>
   <testcase name="twoBaseBearWithNoClothing[1]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="threeBaseBearWithNoClothing[1]" classname="GivenBlackBox" time="0.0"/>
   <testcase name="oneBaseBear3clothingsLargeNumberExpectSaving[2]" classname="GivenBlackBox" time="0.002">
     <failure message="java.lang.AssertionError: expected:&lt;1.8E307&gt; but was:&lt;1.7999999999999995E307&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;1.8E307&gt; but was:&lt;1.7999999999999995E307&gt;
 	at org.junit.Assert.fail(Assert.java:88)
@@ -944,12 +944,12 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBaseBearWithnoClothing[2]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="oneBaseBearWithnoClothing[2]" classname="GivenBlackBox" time="0.0"/>
   <testcase name="oneDownFoamWithnoClothing[2]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="oneBaseBear3clothingsoneFreeExpectSaving[2]" classname="GivenBlackBox" time="0.001"/>
-  <testcase name="oneBear3clothingsExpectSaving[2]" classname="GivenBlackBox" time="0.003"/>
+  <testcase name="oneBaseBear3clothingsoneFreeExpectSaving[2]" classname="GivenBlackBox" time="0.0"/>
+  <testcase name="oneBear3clothingsExpectSaving[2]" classname="GivenBlackBox" time="0.001"/>
   <testcase name="oneBearTest3clothingsExpectSaving[2]" classname="GivenBlackBox" time="0.001"/>
-  <testcase name="oneBearTest10clothingsDiffPriceExpectSaving[2]" classname="GivenBlackBox" time="0.0">
+  <testcase name="oneBearTest10clothingsDiffPriceExpectSaving[2]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;15.0&gt; but was:&lt;20.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;15.0&gt; but was:&lt;20.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -1018,8 +1018,8 @@
   <testcase name="oneBaseBearWithOneClothing[2]" classname="GivenBlackBox" time="0.0"/>
   <testcase name="threeBearsSaveOnCheapest[2]" classname="GivenBlackBox" time="0.001"/>
   <testcase name="oneBaseBear3clothingsDiffPricesExpectSaving[2]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="oneBaseBear3clothingsNegativeExpectSaving[2]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="oneBearTest10clothingsExpectSaving[2]" classname="GivenBlackBox" time="0.002">
+  <testcase name="oneBaseBear3clothingsNegativeExpectSaving[2]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="oneBearTest10clothingsExpectSaving[2]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;12.0&gt; but was:&lt;16.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;12.0&gt; but was:&lt;16.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -1086,10 +1086,10 @@
 </failure>
   </testcase>
   <testcase name="oneDownBearWithnoClothing[2]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="oneBearNoSavings[2]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="threeDiffBaseBearThreeClothingEach[2]" classname="GivenBlackBox" time="0.0"/>
+  <testcase name="oneBearNoSavings[2]" classname="GivenBlackBox" time="0.003"/>
   <testcase name="twoBaseBearWithNoClothing[2]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="threeBaseBearWithNoClothing[2]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="oneBaseBear3clothingsLargeNumberExpectSaving[3]" classname="GivenBlackBox" time="0.002">
+  <testcase name="oneBaseBear3clothingsLargeNumberExpectSaving[3]" classname="GivenBlackBox" time="0.003">
     <failure message="java.lang.AssertionError: expected:&lt;1.8E307&gt; but was:&lt;1.7999999999999995E307&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;1.8E307&gt; but was:&lt;1.7999999999999995E307&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -1155,7 +1155,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBaseBearWithnoClothing[3]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="oneBaseBearWithnoClothing[3]" classname="GivenBlackBox" time="0.0"/>
   <testcase name="oneDownFoamWithnoClothing[3]" classname="GivenBlackBox" time="0.0"/>
   <testcase name="oneBaseBear3clothingsoneFreeExpectSaving[3]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;0.0&gt; but was:&lt;30.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;0.0&gt; but was:&lt;30.0&gt;
@@ -1223,13 +1223,13 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBear3clothingsExpectSaving[3]" classname="GivenBlackBox" time="0.001">
+  <testcase name="oneBear3clothingsExpectSaving[3]" classname="GivenBlackBox" time="0.0">
     <failure message="java.lang.AssertionError: expected:&lt;4.0&gt; but was:&lt;34.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;4.0&gt; but was:&lt;34.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:553)
 	at org.junit.Assert.assertEquals(Assert.java:683)
-	at GivenBlackBox.oneBear3clothingsExpectSaving(GivenBlackBox.java:438)
+	at GivenBlackBox.oneBear3clothingsExpectSaving(GivenBlackBox.java:446)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1289,13 +1289,13 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBearTest3clothingsExpectSaving[3]" classname="GivenBlackBox" time="0.001">
+  <testcase name="oneBearTest3clothingsExpectSaving[3]" classname="GivenBlackBox" time="0.002">
     <failure message="java.lang.AssertionError: expected:&lt;4.0&gt; but was:&lt;34.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;4.0&gt; but was:&lt;34.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:553)
 	at org.junit.Assert.assertEquals(Assert.java:683)
-	at GivenBlackBox.oneBearTest3clothingsExpectSaving(GivenBlackBox.java:417)
+	at GivenBlackBox.oneBearTest3clothingsExpectSaving(GivenBlackBox.java:425)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1355,7 +1355,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBearTest10clothingsDiffPriceExpectSaving[3]" classname="GivenBlackBox" time="0.001">
+  <testcase name="oneBearTest10clothingsDiffPriceExpectSaving[3]" classname="GivenBlackBox" time="0.021">
     <failure message="java.lang.AssertionError: expected:&lt;15.0&gt; but was:&lt;42.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;15.0&gt; but was:&lt;42.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -1620,7 +1620,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="oneBearTest10clothingsExpectSaving[3]" classname="GivenBlackBox" time="0.0">
+  <testcase name="oneBearTest10clothingsExpectSaving[3]" classname="GivenBlackBox" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;12.0&gt; but was:&lt;42.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;12.0&gt; but was:&lt;42.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -1687,7 +1687,8 @@
 </failure>
   </testcase>
   <testcase name="oneDownBearWithnoClothing[3]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="oneBearNoSavings[3]" classname="GivenBlackBox" time="0.0">
+  <testcase name="threeDiffBaseBearThreeClothingEach[3]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="oneBearNoSavings[3]" classname="GivenBlackBox" time="0.008">
     <failure message="java.lang.AssertionError: expected:&lt;0.0&gt; but was:&lt;30.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;0.0&gt; but was:&lt;30.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -1754,8 +1755,7 @@
 </failure>
   </testcase>
   <testcase name="twoBaseBearWithNoClothing[3]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="threeBaseBearWithNoClothing[3]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="oneBaseBear3clothingsLargeNumberExpectSaving[4]" classname="GivenBlackBox" time="0.01">
+  <testcase name="oneBaseBear3clothingsLargeNumberExpectSaving[4]" classname="GivenBlackBox" time="0.003">
     <failure message="java.lang.AssertionError: expected:&lt;1.8E307&gt; but was:&lt;1.7999999999999995E307&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;1.8E307&gt; but was:&lt;1.7999999999999995E307&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -1822,11 +1822,11 @@
 </failure>
   </testcase>
   <testcase name="oneBaseBearWithnoClothing[4]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="oneDownFoamWithnoClothing[4]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="oneDownFoamWithnoClothing[4]" classname="GivenBlackBox" time="0.0"/>
   <testcase name="oneBaseBear3clothingsoneFreeExpectSaving[4]" classname="GivenBlackBox" time="0.001"/>
-  <testcase name="oneBear3clothingsExpectSaving[4]" classname="GivenBlackBox" time="0.002"/>
-  <testcase name="oneBearTest3clothingsExpectSaving[4]" classname="GivenBlackBox" time="0.001"/>
-  <testcase name="oneBearTest10clothingsDiffPriceExpectSaving[4]" classname="GivenBlackBox" time="0.022">
+  <testcase name="oneBear3clothingsExpectSaving[4]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="oneBearTest3clothingsExpectSaving[4]" classname="GivenBlackBox" time="0.062"/>
+  <testcase name="oneBearTest10clothingsDiffPriceExpectSaving[4]" classname="GivenBlackBox" time="0.03">
     <failure message="java.lang.AssertionError: expected:&lt;15.0&gt; but was:&lt;12.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;15.0&gt; but was:&lt;12.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -1893,14 +1893,14 @@
 </failure>
   </testcase>
   <testcase name="oneBaseBearWithOneClothing[4]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="threeBearsSaveOnCheapest[4]" classname="GivenBlackBox" time="0.005"/>
-  <testcase name="oneBaseBear3clothingsDiffPricesExpectSaving[4]" classname="GivenBlackBox" time="0.002"/>
-  <testcase name="oneBaseBear3clothingsNegativeExpectSaving[4]" classname="GivenBlackBox" time="0.002"/>
-  <testcase name="oneBearTest10clothingsExpectSaving[4]" classname="GivenBlackBox" time="0.002"/>
+  <testcase name="threeBearsSaveOnCheapest[4]" classname="GivenBlackBox" time="0.002"/>
+  <testcase name="oneBaseBear3clothingsDiffPricesExpectSaving[4]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="oneBaseBear3clothingsNegativeExpectSaving[4]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="oneBearTest10clothingsExpectSaving[4]" classname="GivenBlackBox" time="0.001"/>
   <testcase name="oneDownBearWithnoClothing[4]" classname="GivenBlackBox" time="0.0"/>
-  <testcase name="oneBearNoSavings[4]" classname="GivenBlackBox" time="0.004"/>
-  <testcase name="twoBaseBearWithNoClothing[4]" classname="GivenBlackBox" time="0.001"/>
-  <testcase name="threeBaseBearWithNoClothing[4]" classname="GivenBlackBox" time="0.0"/>
+  <testcase name="threeDiffBaseBearThreeClothingEach[4]" classname="GivenBlackBox" time="0.0"/>
+  <testcase name="oneBearNoSavings[4]" classname="GivenBlackBox" time="0.001"/>
+  <testcase name="twoBaseBearWithNoClothing[4]" classname="GivenBlackBox" time="0.0"/>
   <system-out><![CDATA[Easter egg #2: dQw4w
 Easter Egg #6: 'it is bad.' -- Quote Cory House 
 Easter Egg #6: 'it is bad.' -- Quote Cory House 
