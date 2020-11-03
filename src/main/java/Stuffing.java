@@ -1,5 +1,9 @@
 package main.java;
 
+/** Class:  Stuffing
+ *  Description: Class that sets the stuffing relation to price of each bear.
+ * */
+
 public class Stuffing {
     public enum stuffing {
         BASE,
