@@ -1,6 +1,8 @@
 # ide artifacts
 .idea/
 *.iml
+*.classpath
+*.project
 
 # Compiled class file
 *.class
@@ -29,3 +31,5 @@ hs_err_pid*
 # OS directory artifacts
 *.DS_Store
 /bin/
+!cls/
+confg/
