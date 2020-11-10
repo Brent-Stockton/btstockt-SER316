@@ -1,20 +1,20 @@
 package main.java;
 
+import main.java.NoiseMaker.Location;
+
 public class NoiseMaker {
     public double price;
-    String label;
-    String recording;
+    
+   
 
     Location spot;
 
     public NoiseMaker() {
-        this("Default Noise", "I wuv you", Location.CENTERBODY);
+        this(Location.CENTERBODY);
     }
 
-    public NoiseMaker(String label, String recording,
-                      Location location) {
-        this.label = label;
-        this.recording = recording;
+ // SER316 TASK 2 SPOT- BUGS FIX    
+    public NoiseMaker(Location location) {  
         this.spot = location;
         switch (location) {
             case CENTERBODY:
@@ -31,5 +31,7 @@ public class NoiseMaker {
         RIGHT_HAND, LEFT_HAND, RIGHT_FOOT, LEFT_FOOT, CENTERBODY
     }
 }
+
+
 
 

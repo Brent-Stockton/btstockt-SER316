@@ -1,31 +1,24 @@
 package main.java;
 
 public class Clothing implements Comparable<Clothing> {
-    public double price;   
-    public String Description;
+    public double price;
+   
 
     public Clothing() {
-        this(4.00, "Generic Offtrack Separate");
+        this(4.00);
 
     }
 
-    public Clothing(double price, String descr) {
+    public Clothing(double price) {
         this.price = price;
-        this.Description = descr;
+      //SER316 TASK 2 SPOT- BUGS FIX
+       // this.Description = descr;
     }
-    /**Method:  CompareTo(Clothing clothes)
-     * Inputs:  Clothing clothes
-     * Returns:  int (1,-1,0)
-     * Description: Method compares clothing prices and 
-     * returns a integer.
-     * */
+    
+
+
     public int compareTo(Clothing clothes) {
-        if (clothes.price > this.price) {
-            return 1;
-        } else if (clothes.price < this.price) {
-            return -1;
-        } else {
-            return 0;
-        }
+        //SER316 TASK 2 SPOTBUGS FIX
+        return Double.compare(clothes.price, this.price);
     }
 }

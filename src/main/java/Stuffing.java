@@ -1,34 +1,32 @@
 package main.java;
 
-/** Class:  Stuffing
- *  Description: Class that sets the stuffing relation to price of each bear.
- * */
 
 public class Stuffing {
-    public enum stuffing {
+    
+    public enum BearStuffing {
         BASE,
         DOWN,
         FOAM
-    }
+    }  //SER316 TASK 2 SPOT- BUGS FIX - changed enum to capital letter
 
-    stuffing polyStuffing;
+    BearStuffing polyStuffing;
     int price;
 
-    public Stuffing (stuffing interiorStuffing) {
+    public Stuffing (BearStuffing interiorStuffing) {
 
         switch (interiorStuffing) {
             case BASE:
-                this.polyStuffing = stuffing.BASE;
+                this.polyStuffing = BearStuffing.BASE;
                 this.price = 30;
                 break;
             case DOWN:
-                this.polyStuffing = stuffing.DOWN;
+                this.polyStuffing = BearStuffing.DOWN;
                 this.price = 40;
                 break;
-            case FOAM:
-                this.polyStuffing = stuffing.FOAM;
-                this.price = 50;
-                break;
+        //SER316 TASK 2 SPOT- BUGS FIX    case FOAM:
+          //      this.polyStuffing = BearStuffing.FOAM;
+           //     this.price = 50;
+            //    break;
         }
     }
 }

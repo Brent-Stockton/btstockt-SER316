@@ -1,7 +1,8 @@
 package main.java;
 
-import main.java.Stuffing.stuffing;
+import main.java.Stuffing.BearStuffing;
 import java.util.LinkedList;
+import java.util.Objects;
 
 public class Bear implements Comparable<Bear>{
     public Casing casing;
@@ -18,14 +19,14 @@ public class Bear implements Comparable<Bear>{
 
     public Bear() {
         this.casing = new Casing();
-        this.stuff = new Stuffing(stuffing.BASE);
+        this.stuff = new Stuffing(BearStuffing.BASE);
         noisemakers = new LinkedList<>();
         clothing = new LinkedList<>();
         ink = new Embroidery("");
         price = 0;
     }
 
-    public Bear(stuffing stuff) {
+    public Bear(BearStuffing stuff) {
         this.casing = new Casing();
         this.stuff = new Stuffing(stuff);
         noisemakers = new LinkedList<>();
@@ -34,7 +35,6 @@ public class Bear implements Comparable<Bear>{
         price = 0;
     }
 
-    
     public void setPrice(double incomingPrice) {
         this.price = incomingPrice;
     }
@@ -56,5 +56,22 @@ public class Bear implements Comparable<Bear>{
     @Override
     public int compareTo(Bear bear) {
         return new Double(this.price).compareTo(bear.price);
+    }
+  
+    //SER316 TASK 2 SPOT- BUGS FIX
+    @Override
+    public int hashCode() {
+        return Objects.hash(price);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+       if (this == o)
+           return true;
+       if(o == null || getClass() != o.getClass()) 
+           return false;
+       Bear bear = (Bear) o;
+       return Double.compare(bear.price, price) == 0;
+       
     }
 }

@@ -1,12 +1,16 @@
 package main.java;
 
 public class Embroidery {
-    final double PRICE_PER_LETTER = 1.00;
+    //SER316 TASK 2 SPOT- BUGS FIX
+    final static double pricePerLetter = 1.00;
     double price;
-    String embroidText;
+  //SER316 TASK 2 SPOT- BUGS FIX
+   // String embroidText;
 
     public Embroidery (String embroidery) {
-        this.embroidText = embroidery;
-        this.price = embroidery.length() * PRICE_PER_LETTER;
+        
+        //SER316 TASK 2 SPOT- BUGS FIX
+        //this.embroidText = embroidery;
+        this.price = embroidery.length() * pricePerLetter;
     }
 }

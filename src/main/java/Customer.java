@@ -31,7 +31,9 @@ public class Customer {
     public Customer(int age, String state, Customer custumer) {
         this.parent = custumer;
         this.age = age;
-        this.customer_id = UUID.randomUUID().toString();
+        
+        //SER316 TASK 2 SPOT- BUGS FIX
+        //this.customer_id = UUID.randomUUID().toString();
 
         this.state = state;
     }
