@@ -3,14 +3,12 @@ package main.java;
 public class Casing {
     double priceModifier;
 
-    String description;
-
+   
+  //SER316 TASK 2 SPOT- BUGS FIX
     public Casing() {
-        this(1.00, "Default outer shell");
+        this(1.00);
     }
 
-    public Casing(double price, String descr) {
-        this.priceModifier = price;
-        this.description = descr;
-    }
+    public Casing(double price) {
+        this.priceModifier = price;    }
 }

@@ -1,7 +1,5 @@
 package main.java;
 
-import static org.junit.Assert.assertEquals;
-
 import java.util.*;
 
 // This class provides functionality for a BearWorkshop class.
@@ -38,12 +36,14 @@ public class BearWorkshop implements BearWorkshopInterface{
     public double getCost(Bear bear) {
         Collections.sort(bear.clothing);
         int numFree = bear.clothing.size() / 3;
-        ArrayList<Clothing> freeClothes = new ArrayList<>();
+      
+        //SER316 TASK 2 SPOT- BUGS FIX
+        //ArrayList<Clothing> freeClothes = new ArrayList<>();
 
         for (int i = 0; i < bear.clothing.size(); i++) {
             Clothing clothes = bear.clothing.get(i);
             if (i < numFree) {
-                freeClothes.add(clothes);
+             
             } else {
                 bear.price += clothes.price;
             }
@@ -57,16 +57,7 @@ public class BearWorkshop implements BearWorkshopInterface{
             bear.price += bear.ink.price;
         }
 
-        
         bear.price += bear.stuff.price;
-        
-        //added accessory discount  -Brent Stockton - failed to calculate before
-        int numFreeClothes = bear.clothing.size() / 3;
-		
-        if(bear.clothing.size() - numFreeClothes + bear.noisemakers.size()  >= 10) {
-        	
-			bear.price *= .9;
-   }
         bear.price *= bear.casing.priceModifier;
 
         return bear.price;
@@ -103,8 +94,6 @@ public class BearWorkshop implements BearWorkshopInterface{
      * You can assume these taxes are what we want, so they are not wrong.
      * @return
      */
-    
-    ///FIX ME SMELL - CHANGE TO IF STATEMENTS
     public double calculateTax() {
         double tax;
         switch (customer.state) {
@@ -137,13 +126,13 @@ public class BearWorkshop implements BearWorkshopInterface{
      * TODO: test me and fix me in assignment 3
      */
     @Override
-    public boolean addBear(Bear bear) {
-        if (this.BearCart.add(bear)) {
+    public boolean addBear(Bear bear)       {
+        if (this.BearCart.add(bear))        {
             return true;
-    }
-        else {
+                                            }
+        else                                {
             return false;
-    }
+                                            }
     }
     // Simple means to remove a bear
     @Override
@@ -161,8 +150,8 @@ public class BearWorkshop implements BearWorkshopInterface{
      * TODO: Test me and fix me in assignment 3
      * @return
      */
-    @Override  //code smells - long method
-    public double checkout() {                                    
+    @Override
+    public double checkout() {
         if (this.customer.age <= 13) {
             if (this.customer.parent.age < 18)
                 System.out.println("Guardian is too young");
@@ -192,15 +181,20 @@ public class BearWorkshop implements BearWorkshopInterface{
         }
         savings += rawCost - cost; // calc delta between raw and prorated cost
 
-        List<Bear> nonFreeBears = new LinkedList<>();
-        int counter = 0;
+       // SER316 TASK 2 SPOT- BUGS FIX 
+        //List<Bear> nonFreeBears = new LinkedList<>();
+        
+        
+        
         int numberOfFreeBearsInBearCart = BearCart.size() / 3;
-        double discountedCost = 0;
+       
         Bear freeBear = null;
 
         for (int count = 0; count <= numberOfFreeBearsInBearCart; ++count) {
             for (Bear bear : BearCart) {
-                if (freeBear != null && bear.price < freeBear.price)
+               
+                //SER316 TASK 2 SPOT- BUGS FIX 
+                if (bear.price < freeBear.price)
                     freeBear = bear;
                     temp += temp - temp * 2 + bear.price;
 
@@ -219,68 +213,40 @@ public class BearWorkshop implements BearWorkshopInterface{
      * - It is 10% off the cost of a bear when a single bear has 10 or more accessories (clothes and otherwise) that the customer pays for (so if clothes are free these do not count). 
      * - Clothes are buy 2, get one free on each bear. Always the cheapest clothes are free
      *  TIP: the implemented savings method in the BearWorkshop1-5 do not use the getCost method implemented in this base class. They implement their own savings calculation
-     *  		 All of them do however use the getRawCost method implemented in this base class. 
+     *           All of them do however use the getRawCost method implemented in this base class. 
      * @return the savings if the customer would check out as double
      */
     public double calculateSavings() {
-    	
-    	LinkedList<Bear> tmpBearCart = new LinkedList<Bear>();
-    	Collections.sort(tmpBearCart);
-    	
-    	double totalRawCost = 0;
-    	
-    	for(int i = 0; i < BearCart.size(); i++) {
-    		
-    		tmpBearCart.get(i).price = getRawCost(tmpBearCart.get(i));
-    		totalRawCost += tmpBearCart.get(i).price;
-    	}
-    	
-    	int numFreeBears = BearCart.size() / 3;
-    	for(int i = 0; i < numFreeBears; i++) {
-    		
-    		tmpBearCart.remove(i);
-    	
-    	}
-    	
-    	int accessDiscountNum = 10;  	
-    	double totalDiscountPrice = 0.0;
-    	
-    	
-    	for(int i = 0; i < tmpBearCart.size(); i++) {
-    		
-    		int numFreeClothes = tmpBearCart.get(i).clothing.size() / 3;
-    		
-    		for(int j = 0; j < numFreeClothes; j++) {   					
-    		
-    			tmpBearCart.get(i).clothing.remove(j);
-    		}
-    		 
-    		tmpBearCart.get(i).price = getRawCost(tmpBearCart.get(i));
-    		
-    		
-    			if(tmpBearCart.get(i).clothing.size() - numFreeClothes + tmpBearCart.get(i).noisemakers.size()  >= accessDiscountNum) {
-            	
-    				tmpBearCart.get(i).price *= .9;
-           }
-    			totalDiscountPrice += tmpBearCart.get(i).price;
-    			
-    	}
-    	
-    	return totalRawCost - totalDiscountPrice;
-    }      
 
-            
- 
+        LinkedList<Bear> tmpBearCart = new LinkedList<Bear>();
+        Collections.sort(tmpBearCart);
+        double totalRawCost = 0;
 
+        for (int i = 0; i < BearCart.size(); i++) {
+            tmpBearCart.get(i).price = getRawCost(tmpBearCart.get(i));
+            totalRawCost += tmpBearCart.get(i).price;
+        }
 
-		
-        	
-        	
-        
-        
+        int numFreeBears = BearCart.size() / 3;
+        for (int i = 0; i < numFreeBears; i++) {
+            tmpBearCart.remove(i);
+        }
 
-        
-		
-      
-    
+        int accessDiscountNum = 10;
+        double totalDiscountPrice = 0.0;
+
+        for (int i = 0; i < tmpBearCart.size(); i++) {
+            int numFreeClothes = tmpBearCart.get(i).clothing.size() / 3;
+            for (int j = 0; j < numFreeClothes; j++) {
+                tmpBearCart.get(i).clothing.remove(j);
+            }
+            tmpBearCart.get(i).price = getRawCost(tmpBearCart.get(i));
+            if (tmpBearCart.get(i).clothing.size() - numFreeClothes
+                    + tmpBearCart.get(i).noisemakers.size() >= accessDiscountNum) {
+                tmpBearCart.get(i).price *= .9;
+            }
+            totalDiscountPrice += tmpBearCart.get(i).price;
+        }
+        return totalRawCost - totalDiscountPrice;
+    }          
 }

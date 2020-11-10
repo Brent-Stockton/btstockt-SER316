@@ -6,12 +6,8 @@ NoiseMaker.java
  main.java.NoiseMaker
  main.java.NoiseMaker$1
  main.java.NoiseMaker$Location
-Main.java
- main.java.Main
 Bear.java
  main.java.Bear
-BearWorkshopInterface.java
- main.java.BearWorkshopInterface
 Clothing.java
  main.java.Clothing
 Embroidery.java
@@ -19,6 +15,4 @@ Embroidery.java
 Stuffing.java
  main.java.Stuffing
  main.java.Stuffing$1
- main.java.Stuffing$stuffing
-BearWorkshop.java
- main.java.BearWorkshop
+ main.java.Stuffing$BearStuffing

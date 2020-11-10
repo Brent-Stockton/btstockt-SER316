@@ -27,7 +27,9 @@ dependencies {
  apply plugin: 'checkstyle'
  checkstyle {
    // Keep checkstyle a little quieter
-   ignoreFailures = true
+
+      ignoreFailures = true
+
    showViolations = false
  }
 
@@ -56,5 +58,7 @@ dependencies {
      toolVersion = '4.0.0-beta4'
      ignoreFailures = true
     showProgress = true
-     effort = 'max'
+
+         html.enabled = true     }
  }
+ 
